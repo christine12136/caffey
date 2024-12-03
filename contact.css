@@ -1,0 +1,110 @@
+body {
+
+    font-family: Arial, sans-serif;
+
+    background-color: #f8f8f8;
+
+    margin: 0;
+
+    padding: 20px;
+    height: 100vh; /* Full height of the viewport */
+    background-image: url('contact\ cover.webp'); /* Replace with your image URL */
+    background-size: cover; /* This makes the image cover the entire background */
+    background-position: center; /* This centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background image fixed */
+    
+}
+
+
+.header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.navbar {
+    background: #7e3e11;
+    overflow: hidden;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    float: left;
+}
+
+.navbar ul li a {
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.navbar ul li a.active {
+    background-color: 4CAF50;
+    color: white;
+}
+
+.contact-section {
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    background: transparent;
+    border: 1px solid #7e3e11;
+    border-radius: 5px;
+    margin-top: 20px;
+    background-color: white;
+    
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #7e3e11;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #7e3e11;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #a1958b;
+}
+
+#formResponse {
+    margin-top: 15px;
+    color: #8f7561;
+}

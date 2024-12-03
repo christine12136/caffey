@@ -1,0 +1,32 @@
+body{
+    background-image: url('bg\ cover.jpg');
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    margin: 0; /* Resets default margin */
+    height: 100vh; /* Full height of the viewport */
+    background-size: cover; /* This makes the image cover the entire background */
+    background-position: center; /* This centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background image fixed */
+}
+#form{
+    background-color: white;
+    width: 25%;
+    margin:120px auto;
+    padding:50px;
+    box-shadow: 10px 10px 5px;
+    border-radius: 6px;
+}
+#btn{
+    color:black;
+    background-color: white;
+    padding:10px;
+    font-size: large;
+    border-radius: 10px;
+}
+@media screen and (max-width:700px) {
+    #form{
+        width:65%;
+        padding:40px;
+    }
+}

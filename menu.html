@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to Cart with Receipt</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<header>
+<h1>Brews & Bites</h1>
+    
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="menu.html">SHOP</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+            <li><a href="signin.html">SIGN IN</a></li>
+        </ul>
+    </div>
+</header>
+<body>
+    <div class="container">
+        <div class="product-list">
+            <h1>MENU</h1>
+            <h2>Cold Espresso</h2>
+            <div class="product">
+                <h2>Iced Americano</h2>
+                <img src="iced americano.jpeg" height="80" width="100">
+                <p>Price: 215</p>
+                <input type="number" min="1" value="1" id="qty-product-1">
+                <button onclick="addToCart('Iced Americano', 215, document.getElementById('qty-product-1').value)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <h2>Caramel Macchiato</h2>
+                <img src="carame macchiato.jpeg" height="80" width="100">
+                <p>Price: 250</p>
+                <input type="number" min="1" value="1" id="qty-product-2">
+                <button onclick="addToCart('Caramel Macchiato', 250, document.getElementById('qty-product-2').value)">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <h2>Cappuccino</h2>
+                <img src="iced cappuccino.jpeg" height="80" width="100">
+                <p>Price: 235</p>
+                <input type="number" min="1" value="1" id="qty-product-3">
+                <button onclick="addToCart('Iced Cappuccino', 235, document.getElementById('qty-product-3').value)">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <h2>Pure Matcha Latte</h2>
+                <img src="pure matcha latte.jpeg" height="80" width="100">
+                <p>Price: 240</p>
+                <input type="number" min="1" value="1" id="qty-product-4">
+                <button onclick="addToCart('Pure Matcha Latte', 240, document.getElementById('qty-product-3').value)">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <h2>Vanilla Sweet Cream</h2>
+                <img src="Vanilla Sweet Cream.jpeg" height="80" width="100">
+                <p>Price: 235</p>
+                <input type="number" min="1" value="1" id="qty-product-5">
+                <button onclick="addToCart('Vanilla Sweet Cream', 235, document.getElementById('qty-product-3').value)">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <h2>Strawberry Frappe</h2>
+                <img src="strawberries cream frappuccino.jpeg" height="80" width="100">
+                <p>Price: 255</p>
+                <input type="number" min="1" value="1" id="qty-product-6">
+                <button onclick="addToCart('Strawberry Frappe', 255, document.getElementById('qty-product-3').value)">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <h2>Iced Caffe Mocha</h2>
+                <img src="iced caffe mocha.jpeg" height="80" width="100">
+                <p>Price: 250</p>
+                <input type="number" min="1" value="1" id="qty-product-7">
+                <button onclick="addToCart('Iced Caffe Mocha', 250, document.getElementById('qty-product-3').value)">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <h2>Choco Chip Frappe</h2>
+                <img src="choco chip cream frappuccino.jpeg" height="80" width="100">
+                <p>Price: 250</p>
+                <input type="number" min="1" value="1" id="qty-product-8">
+                <button onclick="addToCart('Choco Chip Frappe', 250, document.getElementById('qty-product-3').value)">Add to Cart</button>
+            </div>
+
+            <h2>Pastries</h2>
+
+            <div class="product">
+                <h2>French Croissant</h2>
+                <img src="french butter croissant.jpg" height="80" width="100">
+                <p>Price: 115</p>
+                <input type="number" min="1" value="1" id="qty-product-9">
+                <button onclick="addToCart('French Croissant', 115, document.getElementById('qty-product-3').value)">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <h2>Ham and Cheese Toastie</h2>
+                <img src="ham n cheese toastie.jpeg" height="80" width="100">
+                <p>Price: 135</p>
+                <input type="number" min="1" value="1" id="qty-product-10">
+                <button onclick="addToCart('Ham and Cheese Toastie', 135, document.getElementById('qty-product-3').value)">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <h2>Belgian Waffle</h2>
+                <img src="belgian waffle.jpeg" height="80" width="100">
+                <p>Price: 115</p>
+                <input type="number" min="1" value="1" id="qty-product-11">
+                <button onclick="addToCart('Belgian Waffle', 115, document.getElementById('qty-product-3').value)">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <h2>Classic Chocolate Cake</h2>
+                <img src="classic chocolate cake.jpeg" height="80" width="100">
+                <p>Price: 159</p>
+                <input type="number" min="1" value="1" id="qty-product-12">
+                <button onclick="addToCart('Classic Chocolate Cake', 159, document.getElementById('qty-product-3').value)">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <h2>NY Cheesecake</h2>
+                <img src="ny cheesecake.jpeg" height="80" width="100">
+                <p>Price: 165</p>
+                <input type="number" min="1" value="1" id="qty-product-13">
+                <button onclick="addToCart('NY Cheesecake', 165, document.getElementById('qty-product-3').value)">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <h2>Blueberry Cheesecake</h2>
+                <img src="blueberry cheesecake.jpeg" height="80" width="100">
+                <p>Price: 185</p>
+                <input type="number" min="1" value="1" id="qty-product-14">
+                <button onclick="addToCart('Blueberry Cheesecake', 185, document.getElementById('qty-product-3').value)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="cart">
+            <h2>Cart</h2>
+            <div id="cart">
+                <p>Your cart is empty.</p>
+            </div>
+            <button onclick="clearCart()">Delete</button>
+            <button onclick="checkout()">Checkout</button>
+        </div>
+
+        <div class="receipt" id="receipt" style="display:none;">
+            <h2>Brews & Bites</h2>
+            <h5>Address: 123 Manila, Philippines
+                <br>Tel: 0912 345 6789
+            </h5>
+            
+            
+            <div id="receipt-details"></div>
+            
+            <h5>Thank you. Please visit us again !</h5>
+            <button onclick="clearCart()">Done</button>
+            
+        </div>
+        
+    </div>
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>

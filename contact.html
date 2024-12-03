@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<header>
+    <h1>Brews & Bites</h1>
+    
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="menu.html">SHOP</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+            <li><a href="signin.html">SIGN IN</a></li>
+        </ul>
+    </div>
+</header>
+<body>
+    <section class="contact-section">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+        <div id="formResponse"></div>
+    </section>
+    
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the default form submission
+    
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    // Here you can add your logic to handle the form data (e.g., send to a server)
+    // For demonstration, we'll just show a message
+    document.getElementById('formResponse').innerText = `Thank you, ${name}! Your message has been received.`;
+    
+    // Clear the form
+    this.reset();
+});
+    </script>
+</body>
+</html>

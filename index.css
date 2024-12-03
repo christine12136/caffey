@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    margin: 0; /* Resets default margin */
+    height: 100vh; /* Full height of the viewport */
+    background-image: url('home\ cover.jpg'); /* Replace with your image URL */
+    background-size: cover; /* This makes the image cover the entire background */
+    background-position: center; /* This centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    
+}
+
+.header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.navbar {
+    background: #7e3e11;
+    overflow: hidden;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    float: left;
+}
+
+.navbar ul li a {
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.navbar ul li a.active {
+    background-color: 4CAF50;
+    color: white;
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 13%;
+    padding-bottom: 25%;
+    color: white;
+    font-size: 50px;
+}
+
+
+
+h3 {
+    font-size: 30px;
+}
+
+img {
+    width: 100%; /* Make the image take the full width */
+    height: 20%; /* Maintain the aspect ratio */
+    display: block; /* Remove bottom whitespace */
+}
+
+.product-picture {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center items horizontally */
+    margin: 20px 0; /* Add some space above and below the section */
+}
+
+.product-picture img {
+    width: 200px; /* Set a fixed width for the images */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px; /* Add space between images */
+    border-radius: 8px; /* Rounded corners for images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+    transition: transform 0.3s; /* Smooth transformation */
+}
+
+.product-picture img:hover {
+    transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+
